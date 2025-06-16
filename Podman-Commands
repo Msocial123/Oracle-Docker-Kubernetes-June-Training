@@ -1,0 +1,2 @@
+ 7 podman create ubuntu /bin/bash
+ 8 podman images
