@@ -27,3 +27,13 @@
    49  podman port A3
    50  podman ps
    podman run -it --name A1 ubuntu /bin/bash
+   podman run -it --name webserver -p 8085:80 ubuntu /bin/bash 
+   ##### Excute the Commands Inside the Container#### 
+   apt-get update -y
+   apt-get install apache2 -y
+   apt-get install git -y 
+   git clone https://github.com/Msocial123/Flipkart-Clone.git
+   cd Flipkart-Clone 
+   cp -r . /var/www/html 
+   service apache start 
+    #################### Access the Application ########################3
