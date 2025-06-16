@@ -5,3 +5,20 @@
 
  chmod 400 "Podman.pem"
  ssh -i "Podman.pem" ubuntu@ec2-13-235-132-13.ap-south-1.compute.amazonaws.com
+
+ Podman Commands :
+
+ 23 podman create --name murali-cont ubuntu /bin/bash
+  24 podman ubuntu
+  25 podman images
+  26 podman ps
+  27 podman ps -a
+  28 podman start murali-cont
+  29 podman ps
+  30 podman ps -a
+  31 podman create -it --name example-app ubuntu /bin/bash
+  32 podman ps -a
+  33 podman start example-app
+  34 podman ps
+  35 docker exec -it example-app /bin/bash
+  36 podman exec -it example-app /bin/bash
