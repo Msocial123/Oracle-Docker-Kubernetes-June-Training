@@ -1,2 +1,7 @@
  7 podman create ubuntu /bin/bash
  8 podman images
+
+ Connect to the Remote Server :
+
+ chmod 400 "Podman.pem"
+ ssh -i "Podman.pem" ubuntu@ec2-13-235-132-13.ap-south-1.compute.amazonaws.com
