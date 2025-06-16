@@ -22,3 +22,8 @@
   34 podman ps
   35 docker exec -it example-app /bin/bash
   36 podman exec -it example-app /bin/bash
+   podman run -td --name A3 -p 8084:80 nginx
+   48  podman ps
+   49  podman port A3
+   50  podman ps
+   podman run -it --name A1 ubuntu /bin/bash
