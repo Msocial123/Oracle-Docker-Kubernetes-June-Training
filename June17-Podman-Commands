@@ -90,3 +90,24 @@ CMD [ "java", "-Xmn256m", "-Xmx768m", "-jar", "shipping.jar" ]
   107  podman volume ls
   108  podman inspect C1
   109  podman ps
+********************************************
+  106  podman run -it --name C1 -v mydata:/Mohan ubuntu /bin/bash
+  107  podman volume ls
+  108  podman inspect C1
+  109  podman ps
+  110  history
+  111  ls
+  112  mkdir DevOps
+  113  cd DevOps
+  114  pwd
+  115  pwd
+  116  cd ..
+  117  podman run -it --name D1 -v /home/user/DevOps:/Sample ubuntu /bin/bash
+  118  ls
+  119  cd DevOps
+  120  ls
+  121  podman inspect D1
+  122  touch DevSecOps
+  123  podman exec -it D1 /bin/bash
+  124  cd ..
+  125  podman run -it --name E1 --privileged=true --volumes-from D1 ubuntu /bin/bash  
