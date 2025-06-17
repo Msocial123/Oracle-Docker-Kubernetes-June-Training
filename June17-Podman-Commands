@@ -28,3 +28,11 @@
   10 podman run -td --name test-web-app -p 3016:3015 localhost/flower-app-test:1.0
   11 podman ps
   12 clear
+
+  *************************
+   2 podman build -t test-maven-web-app:1.0 .
+   3 clear
+   4 docker images
+   5 clear
+   6 podman images
+   7 podman run -td --name example-web -p 8080:8080 localhost/test-maven-web-app:1.0
