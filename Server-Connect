@@ -1,0 +1,2 @@
+chmod 400 "Podman.pem"
+ssh -i "Podman.pem" ubuntu@ec2-3-110-118-219.ap-south-1.compute.amazonaws.com
