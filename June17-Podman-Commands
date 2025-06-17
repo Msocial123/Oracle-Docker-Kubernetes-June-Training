@@ -56,3 +56,37 @@ ENV CART_ENDPOINT=cart:8080
 ENV DB_HOST=mysql
 COPY --from=build /opt/shipping/target/shipping-1.0.jar shipping.jar
 CMD [ "java", "-Xmn256m", "-Xmx768m", "-jar", "shipping.jar" ]
+
+**************************************************************************
+   78  podman run -it --name C1 -v /Murali ubuntu /bin/bash
+   79  podman volume ls
+   80  cd /home/user/.local/share/containers/storage/volumes
+   81  ls
+   82  cd 88781d240bf35cdcc99440f5e5d1e9944fcc6de08efa7ccac3c94d6dd8dc32b5
+   83  ls
+   84  cd _data
+   85  ls
+   86  podman ps
+   87  podman rm -f C1
+   88  ls
+   89  cd /home/user
+   90  clear
+   91  podman run -it --name C1 -v /Murali ubuntu /bin/bash
+   92  podman volume ls
+   93  podman ps
+   94  podman inspect C1
+   95  podman rm -f C1
+   96  volume ls
+   97  podman volume ls
+   98  cd /home/user/.local/share/containers/storage/volumes
+   99  ls
+  100  cd 54ca8b393ca802f9a3c44d26dbd0630d187ec928392ac57b8d2ccae504bf42f8
+  101  ls
+  102  cd _data
+  103  ls
+  104  cd /home/user
+  105  clear
+  106  podman run -it --name C1 -v mydata:/Mohan ubuntu /bin/bash
+  107  podman volume ls
+  108  podman inspect C1
+  109  podman ps
