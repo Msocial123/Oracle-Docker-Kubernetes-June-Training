@@ -1,0 +1,21 @@
+   5 podman ps
+   6 podman images
+   7 clear
+   8 podman build -t flipkart-clone-app:1.0 .
+   9 podman images
+  10 podman inspect localhost/flipkart-clone-app:1.0
+  11 podman ps -a
+  12 podman rm -f 0626a6c8a299
+  13 podman rm -f a802014458bc
+  14 podman rm -f 47bd2f806e84
+  15 podman ps -a
+  16 podman rm -f 5d809b320a87
+  17 podman images
+  18 podman run -td --name flip-web -p 8087:80 localhost/flipkart-clone-app:1.0
+  19 podman login docker.io
+  20 podman tag localhost/flipkart-clone-app:1.0 muralisocial123/flipkart-clone-app:1.0
+  21 podman images
+  22 podman tag localhost/flipkart-clone-app:1.0 docker.io/muralisocial123/flipkart-clone-app:1.0
+  23 podman images
+  24 podman push docker.io/muralisocial123/flipkart-clone-app:1.0
+  25 podman images
