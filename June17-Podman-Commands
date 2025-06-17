@@ -19,3 +19,12 @@
   23 podman images
   24 podman push docker.io/muralisocial123/flipkart-clone-app:1.0
   25 podman images
+
+  ******************************************
+
+   7 podman build -t flower-app-test:1.0 .
+   8 podman build -t flower-app-test:1.0 .
+   9 podman images
+  10 podman run -td --name test-web-app -p 3016:3015 localhost/flower-app-test:1.0
+  11 podman ps
+  12 clear
