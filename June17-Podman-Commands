@@ -36,3 +36,8 @@
    5 clear
    6 podman images
    7 podman run -td --name example-web -p 8080:8080 localhost/test-maven-web-app:1.0
+
+***************************
+ 2 podman build -t python-app:1.0 .
+   3 podman run -td --name pyhton-example -p 5000:5000 python-app:1.0
+   4 podman ps
