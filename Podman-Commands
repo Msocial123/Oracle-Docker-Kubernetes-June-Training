@@ -37,3 +37,9 @@
    cp -r . /var/www/html 
    service apache start 
     #################### Access the Application ########################
+     144  podman network create mynetwork --subnet 10.0.0.0/16 --gateway=10.0.10.100
+  145  podman network ls
+  146  podman inspect mynetwork
+  147  podman run -it --net mynetwork --name Sample-WebApp ubuntu /bin/bash
+  148  podman ps
+  149  podman inspect Sample-WebApp
