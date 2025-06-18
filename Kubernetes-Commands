@@ -1,0 +1,22 @@
+10049  kubectl get ns
+10050  sudo apt-get update && sudo apt-get install -y kubectl
+10051  /usr/bin/sudo apt-get update
+10052  kubectl get pods
+10053  kubectl get deployments 
+10054  kubectl get svc
+10055  kubectl get all -n kube-system
+10056  kubectl get node
+10057  clear
+10058  kubectl create ns murali-ns 
+10059  kubectl get ns
+10060  kubectl explain ns 
+10061  kubectl get ns
+10062  git clone https://github.com/Msocial123/Oracle-Docker-Kubernetes-June-Training.git
+10063  ls
+10064  cd Oracle-Docker-Kubernetes-June-Training/
+10065  ls
+10066  cd Manifests/
+10067  clear
+10068  ls
+10069  kubectl apply -f ns.yaml
+10070  kubectl get ns
