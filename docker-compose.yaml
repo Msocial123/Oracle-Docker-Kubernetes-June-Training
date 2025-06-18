@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  flipkart-clone:
+    image: muralisocial123/flipkart-clone-app:1.0
+    container_name: flipkart-web 
+    ports:
+      - '8083:80'
+  Organic-app:
+    image: muralisocial123/organic-app-web:latest
+    container_name: organic-app 
+    ports:
+      - '5657:5656'
+  digi-bank:
+    image: muralisocial123/digital-bank:1.1.0
+    container_name: digi-bank 
+    ports:
+      - '4546:4545'
+  flower-app: 
+    image: muralisocial123/flower-app-cap:1.0
+    container_name: flower-app 
+    ports:
+      - '3015:3015'
+  e-cart-app:
+    image: muralisocial123/e-commerce-cart:latest
+    container_name: e-cart-app 
+    ports:
+      - '3001:3000'
+    
