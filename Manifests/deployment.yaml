@@ -1,0 +1,22 @@
+apiVersion: apps/v1 
+kind: Deployment 
+metadata: 
+  name: flipkart-app-rs 
+  namespace: murali-ns 
+spec: # this spec define the behaviour of the replicaset 
+  replicas: 3 
+  selector: 
+    matchLabels:
+      app: flip
+  template: # it defines the pod defination 
+    metadata:
+      labels: 
+        app: flip 
+    spec: # This Spec is going define the behaviour of the Pod 
+      containers: 
+        - name: sample-cont 
+          image: muralisocial123/flipkart-clone-app:1.0
+          ports: 
+            - containerPort: 80    
+
+    
