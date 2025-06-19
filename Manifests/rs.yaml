@@ -10,7 +10,7 @@ spec: # this spec define the behaviour of the replicaset
       app: flip
   template: # it defines the pod defination 
     metadata:
-      lables: 
+      labels: 
         app: flip 
     spec: # This Spec is going define the behaviour of the Pod 
       containers: 
