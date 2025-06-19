@@ -1,5 +1,5 @@
 apiVersion: apps/v1 
-kind: Deployment 
+kind: De 
 metadata: 
   name: flipkart-app-rs 
   namespace: murali-ns 
