@@ -20,3 +20,17 @@
 10068  ls
 10069  kubectl apply -f ns.yaml
 10070  kubectl get ns
+14912  kubectl apply -f pod.yaml 
+14913  git pull 
+14914  kubectl get pods
+14915  vi Manifests/pod.yaml 
+14916  kubectl get pods -n murali-ns
+14917  kubectl get pods -o wide  -n murali-ns 
+14918  kubectl describe pod flipkart-app -n test-ns 
+14919  kubectl describe pod flipkart-app -n murali-ns
+14920  kubectl get pods -o wide  -n murali-ns 
+14921  kubectl exec -it  flipkart-app -n murali-ns 
+14922  kubectl exec -it  flipkart-app -n murali-ns -- /bin/bash
+14923  kubectl get nodes -o wide
+14924  history
+thakurvire@cloudsh
