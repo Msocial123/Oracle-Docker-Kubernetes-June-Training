@@ -1,0 +1,36 @@
+values.yaml
+============
+namespace: murali-ns
+replicas: 3
+lables:
+  app: flip
+name: sample
+image:
+  repository: muralisocial123/flipkart-clone-app
+  tag: 1.0
+port: 80
+
+
+deployment.yaml
+===============
+
+apiVersion: apps/v1 
+kind: Deployment
+metadata: 
+  name: {{ .Release.Name }}-deployment 
+  namespace: {{ .Values.namespace }}
+spec: # this spec define the behaviour of the replicaset 
+  replicas: {{ .Values.replicas }}
+  selector: 
+    matchLabels:
+      app: {{ .Values.lables.app }}
+  template: # it defines the pod defination 
+    metadata:
+      labels: 
+        app: {{ .Values.lables.app }} 
+    spec: # This Spec is going define the behaviour of the Pod 
+      containers: 
+        - name: {{ .Values.name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}
+          ports: 
+            - containerPort: {{ .Values.port }}
