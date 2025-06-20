@@ -1,0 +1,8 @@
+apiVersion: v1 
+kind: ConfigMap 
+metadata:
+  name: my-configmap
+data:
+  USERNAME: Murali#$78
+  TOKEN: icjvofiesdjdwc3455!@#$*&fkjfdjfv
+  API: 749FIUHCISDCDC09333jdskdjedc
