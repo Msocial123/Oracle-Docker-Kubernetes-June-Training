@@ -41,6 +41,7 @@ apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: flipkart-hpa
+  namespace: murali-ns
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
