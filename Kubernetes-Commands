@@ -43,3 +43,11 @@ kubectl run ab-tester \
   -- bash
 
 ab -n 100 -c 10 http://<your-service-endpoint>/
+
+
+74247  vi configmap.yaml
+74248  ls
+74249  kubectl apply -f configmap.yaml 
+74250  kubectl get configmaps
+74251  kubectl describe configmap my-configmap
+74252  history
