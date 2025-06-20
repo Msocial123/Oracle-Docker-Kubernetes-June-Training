@@ -51,3 +51,11 @@ ab -n 100 -c 10 http://<your-service-endpoint>/
 74250  kubectl get configmaps
 74251  kubectl describe configmap my-configmap
 74252  history
+
+138559  echo -n 'admin' | base64 
+138560  echo -n 'Mohan$#@78' | base64
+138561  echo -n 'TW9oYW4kI0A3OA==' | base64 -d
+138562  echo -n 'YWRtaW4=' | base64 -d
+138563  echo -n 'admin' | base64
+138564  echo -n 'Mohan@#$%78' | base64
+138565  echo -n 'shcycc7665sdhc#@$%hdhcjdcdjc' | base64
