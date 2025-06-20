@@ -4,7 +4,7 @@ metadata:
   name: flipkart-app-rs 
   namespace: murali-ns 
 spec: # this spec define the behaviour of the replicaset 
-  replicas: 3 
+  replicas: 2 
   selector: 
     matchLabels:
       app: flip
