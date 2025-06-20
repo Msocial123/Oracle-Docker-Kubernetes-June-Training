@@ -34,3 +34,12 @@
 14923  kubectl get nodes -o wide
 14924  history
 thakurvire@cloudsh
+
+
+kubectl run ab-tester \
+  --image=httpd:2.4 \
+  --restart=Never \
+  --rm -it \
+  -- bash
+
+ab -n 100 -c 10 http://<your-service-endpoint>/
