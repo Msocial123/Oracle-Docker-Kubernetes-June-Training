@@ -1,5 +1,5 @@
 apiVersion: apps/v1 
-kind: De 
+kind: Deployment
 metadata: 
   name: flipkart-app-rs 
   namespace: murali-ns 
@@ -23,7 +23,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: flip-svc
-  metadata: murali-ns
+  namespace: murali-ns
 spec:
   selector:
     app: flip
